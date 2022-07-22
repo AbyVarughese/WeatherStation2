@@ -1,0 +1,46 @@
+{
+  "stationCollection": [
+    {
+      "id": "8b301260-d267-11eb-a8f7-591ae1064ded",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "test",
+      "readings": [
+        {
+          "id": "8f12a3c0-d267-11eb-a8f7-591ae1064ded",
+          "title": "et",
+          "artist": "et",
+          "duration": 124
+        }
+      ],
+      "duration": 12
+    },
+    {
+      "id": "ebec41a0-090c-11ed-9146-49b569fbfe9c",
+      "userid": "ddad6480-08e3-11ed-9146-49b569fbfe9c",
+      "title": "Wicklow",
+      "readings": [
+        {
+          "id": "0e24cbe0-09b0-11ed-8620-6510d9b15f2a",
+          "code": 100,
+          "temp": 23,
+          "wind_speed": 32,
+          "wind_dir": 31,
+          "pressure": 742
+        }
+      ],
+      "duration": null
+    },
+    {
+      "id": "f245f5a0-099d-11ed-b7d0-2f45b67c65e3",
+      "userid": "ddad6480-08e3-11ed-9146-49b569fbfe9c",
+      "title": "Cork",
+      "readings": [
+        {
+          "id": "cac06490-09aa-11ed-abf1-3756cad55d02",
+          "duration": null
+        }
+      ],
+      "duration": null
+    }
+  ]
+}
