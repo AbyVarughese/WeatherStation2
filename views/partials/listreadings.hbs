@@ -15,6 +15,9 @@
     {{#each station.readings}}
       <tr>
         <td>
+          {{dateTime}}
+        </td>
+        <td>
           {{code}}
         </td>
         <td>
@@ -29,6 +32,7 @@
         <td>
           {{pressure}}
         </td>
+
         <!-- for editing the reading -->
       <!--  <td>
           <a href="/reading/{{../station.id}}/editreading/{{id}}" class="ui icon button">
