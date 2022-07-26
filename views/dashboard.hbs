@@ -1,7 +1,13 @@
 {{> menu id="dashboard"}}
 
 <section class="ui segment">
-  {{> liststations}}
-  {{> addstation}}
+    <h2 class="ui header">
+      Station List of {{user.firstName}} {{user.lastName}}
+    </h2>
 </section>
+
+  {{> liststations}}
+
+  {{> addstation}}
+
 

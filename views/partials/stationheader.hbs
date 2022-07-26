@@ -1,0 +1,71 @@
+<!-- stationheader expects station object as main object (no station. prefix, only object properties) -->
+
+<table class="ui fixed table">
+  <tr style="background-color:white;color:#ffffff;">
+    <th>
+      <table style="border-radius: 5px;table-layout: fixed; width: 100%; background-color: black; margin: 5px;">
+        <tr>
+          <td><h3>{{title}}</h3></td>
+          <td><img class="ui icon" src="/images/station.png" width="50" height="50"><br/><br/><br/><br/><br/>
+          </td>
+        </tr>
+        <td> Lat: {{latitude}} <br/> Lng: {{longitude}} <br/> <br/></td>
+      </table>
+    </th>
+    <th>
+      <table style="border-radius: 5px;table-layout: fixed; width: 100%;background-color: black; margin: 5px;">
+        <tr>
+          <td><h3> Weather</h3></td>
+          <td><img class="ui icon" src="/images/weather.png" width="50" height="50"><br/><br/><br/>
+          </td>
+        </tr>
+        <td> {{header.weather}} <br/> <br/> <br/><br/><br/></td>
+      </table>
+    </th>
+    <th>
+      <table style="border-radius: 5px;table-layout: fixed; width: 100%;background-color: black; margin: 5px;">
+        <tr>
+          <td><h3> Temp </h3></td>
+          <td><img class="ui icon" src="/images/temp.png" width="50" height="50"><br/><br/></td>
+        </tr>
+        <tr>
+          <td> {{header.temperatureC}} C <br/> {{header.temperatureF}} F <br/> Max:
+            {{header.maxTemp}} <br/> Min: {{header.minTemp}}<br/><br/><br/>
+          <td><img class="ui icon" src="/images/{{header.tempReadingsImg}}" width="50"
+                   height="50"/></td>
+        </tr>
+      </table>
+    </th>
+    <th>
+      <table style="border-radius: 5px;table-layout: fixed; width: 100%;background-color: black; margin: 5px;">
+        <tr>
+          <td><h3> Wind</h3></td>
+          <td><img class="ui icon" src="/images/wind.png" width="50" height="50"></td>
+        </tr>
+        <tr>
+          <td>{{header.windSpeed}} bft <br/> {{header.windDirection}} <br/> Feels like <br/>
+            {{header.windChill}} <br/>Max: {{header.maxWindSpeed}} <br/>Min:
+            {{header.minWindSpeed}}<br/><br/></td>
+          <td><img class="ui icon" src="/images/{{header.windReadingsImg}}" width="50"
+                   height="50"/></td>
+        </tr>
+
+      </table>
+    </th>
+    <th>
+      <table style="border-radius: 5px;table-layout: fixed; width: 100%;background-color: black; margin: 5px;">
+        <tr>
+          <td><h3> Pressure</h3></td>
+          <td><img class="ui icon" src="/images/pressure.png" width="50"
+                   height="50"><br/><br/><br/></td>
+        </tr>
+        <tr>
+          <td> {{header.pressure}} hpa <br/> Max: {{header.maxPressure}}<br/> Min:
+            {{header.minPressure}} <br/><br/><br/></td>
+          <td><img class="ui icon" src="/images/{{header.pressureReadingsImg}}" width="50"
+                   height="50"/></td>
+        </tr>
+      </table>
+    </th>
+  </tr>
+</table>

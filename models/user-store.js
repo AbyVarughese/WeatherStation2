@@ -19,7 +19,12 @@ const userStore = {
   getUserById(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
-
+  getUserByFirstName(firstName) {
+    return this.store.findOneBy(this.collection, { firstName: firstName });
+  },
+  getUserByLastName(lastName) {
+    return this.store.findOneBy(this.collection, { lastName: lastName });
+  },
   getUserByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
   }

@@ -3,14 +3,19 @@
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
+const headerHelper = require("../utils/headerHelper");
 
 const station = {
   index(request, response) {
     const stationId = request.params.id;
     logger.debug("Station id = ", stationId);
+
+    const station = stationStore.getStation(stationId);
+    station.header = headerHelper.getHeader(station);
+
     const viewData = {
       title: "Station",
-      station: stationStore.getStation(stationId)
+      station: station,
     };
     response.render("station", viewData);
   },
@@ -28,6 +33,7 @@ const station = {
     const station = stationStore.getStation(stationId);
     const newReading = {
       id: uuid.v1(),
+      dateTime: new Date().toString().substring(0,24),
       code: Number(request.body.code),
       temp: Number(request.body.temp),
       wind_speed: Number(request.body.wind_speed),

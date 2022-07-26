@@ -4,16 +4,22 @@ const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
+const headerHelper = require("../utils/headerHelper");
+
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
+    const stations = stationStore.getUserStations(loggedInUser.id);
+    for (let i = 0; i < stations.length; i++) {
+      stations[i].header = headerHelper.getHeader(stations[i]);
+    }
     const viewData = {
       title: "Weather top Dashboard",
-      stations: stationStore.getUserStations(loggedInUser.id)
+      stations: stations
     };
-    logger.info("about to render", stationStore.getAllStations());
+    logger.info("about to render", stations);
     response.render("dashboard", viewData);
   },
   async addreport(request, response) {
@@ -29,7 +35,7 @@ const dashboard = {
       report.temperature = reading.temp;
       report.windSpeed = reading.wind_speed;
       report.pressure = reading.pressure;
-      report.windDirection = reading.wind_deg;
+      report.windDirection = reading.wind_dir;
     }
     console.log(report);
     const viewData = {
@@ -51,6 +57,8 @@ const dashboard = {
       id: uuid.v1(),
       userid: loggedInUser.id,
       title: request.body.title,
+      latitude: request.body.latitude,
+      longitude: request.body.longitude,
       readings: []
     };
     logger.debug("Creating a new Station", newStation);
