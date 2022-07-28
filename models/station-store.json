@@ -1,25 +1,11 @@
 {
   "stationCollection": [
     {
-      "id": "8b301260-d267-11eb-a8f7-591ae1064ded",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "test",
-      "readings": [
-        {
-          "id": "8f12a3c0-d267-11eb-a8f7-591ae1064ded",
-          "title": "et",
-          "artist": "et",
-          "duration": 124
-        }
-      ],
-      "duration": 12
-    },
-    {
       "id": "65260570-0bff-11ed-b34c-cb60cd6a4580",
       "userid": "ddad6480-08e3-11ed-9146-49b569fbfe9c",
       "title": "Cork",
-      "latitude": "52.45367",
-      "longitude": "-46.42367",
+      "latitude": "51.8985",
+      "longitude": "-8.4756",
       "readings": [
         {
           "id": "465969d0-0c08-11ed-93cd-75efc231cf30",
@@ -51,21 +37,21 @@
       ],
       "duration": null,
       "header": {
-        "temperatureC": 19.2,
-        "temperatureF": 67,
-        "pressure": 4000,
-        "maxPressure": 4000,
+        "temperatureC": 18.56,
+        "temperatureF": 65,
+        "pressure": 3000,
+        "maxPressure": 3000,
         "minPressure": 1000,
-        "weather": "Light Showers",
-        "maxTemp": 19.2,
+        "weather": "Cloudy",
+        "maxTemp": 18.56,
         "minTemp": 12.7,
         "windSpeed": "11",
         "maxWindSpeed": 115.45,
         "minWindSpeed": 16.87,
-        "windChill": 17,
-        "windDirection": "WestSouthWest",
+        "windChill": 16,
+        "windDirection": "West",
         "tempReadingsImg": "tempRising.png",
-        "windReadingsImg": "windFalling.png",
+        "windReadingsImg": "windRising.png",
         "pressureReadingsImg": "pressureRising.png"
       }
     },
@@ -123,6 +109,52 @@
         "windReadingsImg": "windFalling.png",
         "pressureReadingsImg": "pressureRising.png"
       }
+    },
+    {
+      "id": "9d3d69a0-0cf2-11ed-a19b-df2d690fd7c5",
+      "userid": "ddad6480-08e3-11ed-9146-49b569fbfe9c",
+      "title": "Waterford",
+      "latitude": "52.2593",
+      "longitude": "-7.1101",
+      "readings": [
+        {
+          "id": "99c16c80-0e56-11ed-9d4d-29e1431f51cf",
+          "dateTime": "Thu Jul 28 2022 10:21:02",
+          "code": 100,
+          "temp": 12.7,
+          "wind_speed": 23.54,
+          "wind_dir": 263,
+          "pressure": 1000
+        },
+        {
+          "id": "544d0cc0-0e58-11ed-9c4a-c7121832f3a1",
+          "dateTime": "Thu Jul 28 2022 10:33:25",
+          "code": 200,
+          "temp": 23.43,
+          "wind_speed": 17.48,
+          "wind_dir": 163,
+          "pressure": 1005
+        }
+      ],
+      "header": {
+        "temperatureC": 12.7,
+        "temperatureF": 55,
+        "pressure": 1000,
+        "maxPressure": 1000,
+        "minPressure": 1000,
+        "weather": "Clear",
+        "maxTemp": 12.7,
+        "minTemp": 12.7,
+        "windSpeed": "4",
+        "maxWindSpeed": 23.54,
+        "minWindSpeed": 23.54,
+        "windChill": 11,
+        "windDirection": "West",
+        "tempReadingsImg": "blank.png",
+        "windReadingsImg": "blank.png",
+        "pressureReadingsImg": "blank.png"
+      },
+      "duration": null
     }
   ]
 }

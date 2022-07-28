@@ -12,12 +12,23 @@ const dashboard = {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
     const stations = stationStore.getUserStations(loggedInUser.id);
+    stations.sort((a,b) => {
+      return a.title.localeCompare(b.title);
+    });
     for (let i = 0; i < stations.length; i++) {
       stations[i].header = headerHelper.getHeader(stations[i]);
+       }
+    let markers = "";
+    for (let i = 0; i < stations.length; i++) {
+      markers += "L.marker(["+stations[i].latitude.toString()+", "+stations[i].longitude.toString()+"]).addTo(map);\r\n";
     }
+    let mapview = ".setView(["+stations[0].latitude.toString()+", "+stations[0].longitude.toString()+"], 13)";
     const viewData = {
       title: "Weather top Dashboard",
-      stations: stations
+      stations: stations,
+      account: loggedInUser,
+      markers: markers,
+      mapview: mapview,
     };
     logger.info("about to render", stations);
     response.render("dashboard", viewData);

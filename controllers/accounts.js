@@ -53,7 +53,27 @@ const accounts = {
   getCurrentUser(request) {
     const userEmail = request.cookies.station;
     return userstore.getUserByEmail(userEmail);
+  },
+
+  account (request, response) {
+    const userEmail = request.cookies.station;
+    const account = userstore.getUserByEmail(userEmail);
+
+    const viewData = {
+      title: "Login to the Service",
+      account: account,
+    };
+    response.render("account", viewData);
+
+  },
+
+  edit (request, response) {
+    const userEmail = request.cookies.station;
+    userstore.updateAccount(userEmail, request.body.firstname, request.body.lastname);
+    response.redirect("/account");
+
   }
+
 };
 
 module.exports = accounts;

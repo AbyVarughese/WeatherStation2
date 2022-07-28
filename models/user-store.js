@@ -27,6 +27,12 @@ const userStore = {
   },
   getUserByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
+  },
+  updateAccount(email, firstname, lastname) {
+    const account = this.store.findOneBy(this.collection, { email: email });
+    account.firstName = firstname;
+    account.lastName = lastname;
+    this.store.save();
   }
 };
 
