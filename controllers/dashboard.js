@@ -22,7 +22,7 @@ const dashboard = {
     for (let i = 0; i < stations.length; i++) {
       markers += "L.marker(["+stations[i].latitude.toString()+", "+stations[i].longitude.toString()+"]).addTo(map);\r\n";
     }
-    let mapview = ".setView(["+stations[0].latitude.toString()+", "+stations[0].longitude.toString()+"], 13)";
+    let mapview = ".setView(["+stations[0].latitude.toString()+", "+stations[0].longitude.toString()+"], 6.4)";
     const viewData = {
       title: "Weather top Dashboard",
       stations: stations,
@@ -64,6 +64,9 @@ const dashboard = {
 
   addStation(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
+    if(request.body.title.length == 0 || request.body.latitude.length == 0 || request.body.longitude.length == 0) {
+      logger.warn("Invalid values");
+    }else {
     const newStation = {
       id: uuid.v1(),
       userid: loggedInUser.id,
@@ -74,6 +77,7 @@ const dashboard = {
     };
     logger.debug("Creating a new Station", newStation);
     stationStore.addStation(newStation);
+  }
     response.redirect("/dashboard");
   }
 };

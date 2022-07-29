@@ -94,7 +94,7 @@ const headerHelper = {
       if (reading.code == 700) {
         return "Snow";
       }
-      if (reading.code == 800) {
+      if (reading.code >= 800) {
         return "Thunder";
       }
       return "0";

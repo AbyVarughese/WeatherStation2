@@ -1,10 +1,5 @@
 {{> menu}}
-<!--
-<section class="ui center aligned middle aligned segment">
-  <h2 class="ui header">
-    {{station.title}}
-  </h2>
--->
+
   <section class="ui segment">
     <h2 class="ui header">
       {{station.title}}
@@ -12,7 +7,9 @@
     <!-- set station as main object because that is what stationheader expects -->
     {{#with station}}
       {{> stationheader}}
+      {{> trends}}
     {{/with}}
   {{> listreadings}}
   {{> addreading}}
+
 </section>

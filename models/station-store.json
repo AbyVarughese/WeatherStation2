@@ -33,26 +33,35 @@
           "wind_speed": 115.45,
           "wind_dir": 263,
           "pressure": 3000
+        },
+        {
+          "id": "5c5999e0-0f36-11ed-a535-256741ac9b91",
+          "dateTime": "Fri Jul 29 2022 13:02:45",
+          "code": 803,
+          "temp": 18.88,
+          "wind_speed": 4.63,
+          "wind_dir": 200,
+          "pressure": 1018
         }
       ],
       "duration": null,
       "header": {
-        "temperatureC": 18.56,
-        "temperatureF": 65,
-        "pressure": 3000,
+        "temperatureC": 18.88,
+        "temperatureF": 66,
+        "pressure": 1018,
         "maxPressure": 3000,
-        "minPressure": 1000,
-        "weather": "Cloudy",
-        "maxTemp": 18.56,
-        "minTemp": 12.7,
-        "windSpeed": "11",
+        "minPressure": 900,
+        "weather": "Thunder",
+        "maxTemp": 18.88,
+        "minTemp": -4,
+        "windSpeed": "1",
         "maxWindSpeed": 115.45,
-        "minWindSpeed": 16.87,
-        "windChill": 16,
-        "windDirection": "West",
+        "minWindSpeed": 4.63,
+        "windChill": 20,
+        "windDirection": "SouthSouthWest",
         "tempReadingsImg": "tempRising.png",
-        "windReadingsImg": "windRising.png",
-        "pressureReadingsImg": "pressureRising.png"
+        "windReadingsImg": "windFalling.png",
+        "pressureReadingsImg": "pressureFalling.png"
       }
     },
     {
@@ -88,26 +97,44 @@
           "wind_speed": 5.29,
           "wind_dir": 154,
           "pressure": 2000
+        },
+        {
+          "id": "56173c00-0f35-11ed-80e7-81d3e32235b4",
+          "dateTime": "Fri Jul 29 2022 12:55:27",
+          "code": 400,
+          "temp": 19.56,
+          "wind_speed": 23.64,
+          "wind_dir": 142,
+          "pressure": 901
+        },
+        {
+          "id": "dccba3d0-0f35-11ed-a535-256741ac9b91",
+          "dateTime": "Fri Jul 29 2022 12:59:12",
+          "code": 803,
+          "temp": 18.99,
+          "wind_speed": 4.76,
+          "wind_dir": 189,
+          "pressure": 1018
         }
       ],
       "duration": null,
       "header": {
-        "temperatureC": 15.31,
-        "temperatureF": 60,
-        "pressure": 2000,
+        "temperatureC": 18.99,
+        "temperatureF": 66,
+        "pressure": 1018,
         "maxPressure": 2000,
         "minPressure": 900,
-        "weather": "Partial clouds",
-        "maxTemp": 16.34,
+        "weather": "Thunder",
+        "maxTemp": 19.56,
         "minTemp": 12.7,
-        "windSpeed": "0",
+        "windSpeed": "1",
         "maxWindSpeed": 52.74,
-        "minWindSpeed": 5.29,
-        "windChill": 16,
-        "windDirection": "SouthSouthEast",
+        "minWindSpeed": 4.76,
+        "windChill": 20,
+        "windDirection": "South",
         "tempReadingsImg": "tempRising.png",
         "windReadingsImg": "windFalling.png",
-        "pressureReadingsImg": "pressureRising.png"
+        "pressureReadingsImg": "pressureFalling.png"
       }
     },
     {
@@ -137,19 +164,19 @@
         }
       ],
       "header": {
-        "temperatureC": 12.7,
-        "temperatureF": 55,
-        "pressure": 1000,
-        "maxPressure": 1000,
+        "temperatureC": 23.43,
+        "temperatureF": 74,
+        "pressure": 1005,
+        "maxPressure": 1005,
         "minPressure": 1000,
-        "weather": "Clear",
-        "maxTemp": 12.7,
+        "weather": "Partial clouds",
+        "maxTemp": 23.43,
         "minTemp": 12.7,
-        "windSpeed": "4",
+        "windSpeed": "3",
         "maxWindSpeed": 23.54,
-        "minWindSpeed": 23.54,
-        "windChill": 11,
-        "windDirection": "West",
+        "minWindSpeed": 17.48,
+        "windChill": 24,
+        "windDirection": "SouthSouthEast",
         "tempReadingsImg": "blank.png",
         "windReadingsImg": "blank.png",
         "pressureReadingsImg": "blank.png"

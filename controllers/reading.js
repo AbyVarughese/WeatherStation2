@@ -30,7 +30,7 @@ const reading = {
     logger.debug(`Updating Reading ${readingId} from Station ${stationId}`);
     stationStore.updateReading(reading, newReading);
     response.redirect("/station/" + stationId);
-  }
+  },
 };
 
 module.exports = reading;

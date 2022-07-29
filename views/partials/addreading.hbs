@@ -28,3 +28,10 @@ This form is to add the readings - min and max is about the limits
   </div>
   <button class="ui blue submit button">Add Reading</button>
 </form>
+
+<form class="ui stacked segment form" action="/station/{{station.id}}/generatereading" method="POST">
+    <div class="field">
+
+      <button class="ui red submit button">Auto Generate Reading</button>
+    </div>
+</form>

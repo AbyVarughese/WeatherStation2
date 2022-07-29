@@ -1,0 +1,45 @@
+<div class="ui segment" id="chart"></div>
+<script>
+
+  const data = {
+    labels: [
+      {{#each readings}}
+        "{{dateTime}}",
+      {{/each}}
+    ],
+    datasets: [
+      {
+        name: "Temperature", chartType: "line",
+        values: [
+          {{#each readings}}
+            {{temp}},
+          {{/each}}
+        ]
+      },
+     {
+        name: "Wind Direction", chartType: "line",
+        values: [
+          {{#each readings}}
+            {{wind_dir}},
+          {{/each}}
+        ]
+      },
+
+      {
+        name: "Wind Speed", chartType: "bar",
+        values: [
+          {{#each readings}}
+            {{wind_speed}},
+          {{/each}}
+        ]
+      }
+    ]
+  }
+  new frappe.Chart("#chart", {
+    data: data,
+    type: "axis-mixed",
+    height: 300,
+    colors: ["red" ,"blue" , "green"]
+  });
+
+</script>
