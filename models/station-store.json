@@ -50,10 +50,10 @@
         "temperatureF": 66,
         "pressure": 1018,
         "maxPressure": 3000,
-        "minPressure": 900,
+        "minPressure": 1000,
         "weather": "Thunder",
         "maxTemp": 18.88,
-        "minTemp": -4,
+        "minTemp": 12.7,
         "windSpeed": "1",
         "maxWindSpeed": 115.45,
         "minWindSpeed": 4.63,
@@ -61,7 +61,7 @@
         "windDirection": "SouthSouthWest",
         "tempReadingsImg": "tempRising.png",
         "windReadingsImg": "windFalling.png",
-        "pressureReadingsImg": "pressureFalling.png"
+        "pressureReadingsImg": "pressureRising.png"
       }
     },
     {
@@ -79,15 +79,6 @@
           "wind_speed": 23.65,
           "wind_dir": 234,
           "pressure": 900
-        },
-        {
-          "id": "f5c6b820-0c33-11ed-aa58-5140606894a5",
-          "dateTime": "Mon Jul 25 2022 17:08:02",
-          "code": 300,
-          "temp": 16.34,
-          "wind_speed": 52.74,
-          "wind_dir": 127,
-          "pressure": 1000
         },
         {
           "id": "15f84be0-0c34-11ed-aa58-5140606894a5",
@@ -136,52 +127,6 @@
         "windReadingsImg": "windFalling.png",
         "pressureReadingsImg": "pressureFalling.png"
       }
-    },
-    {
-      "id": "9d3d69a0-0cf2-11ed-a19b-df2d690fd7c5",
-      "userid": "ddad6480-08e3-11ed-9146-49b569fbfe9c",
-      "title": "Waterford",
-      "latitude": "52.2593",
-      "longitude": "-7.1101",
-      "readings": [
-        {
-          "id": "99c16c80-0e56-11ed-9d4d-29e1431f51cf",
-          "dateTime": "Thu Jul 28 2022 10:21:02",
-          "code": 100,
-          "temp": 12.7,
-          "wind_speed": 23.54,
-          "wind_dir": 263,
-          "pressure": 1000
-        },
-        {
-          "id": "544d0cc0-0e58-11ed-9c4a-c7121832f3a1",
-          "dateTime": "Thu Jul 28 2022 10:33:25",
-          "code": 200,
-          "temp": 23.43,
-          "wind_speed": 17.48,
-          "wind_dir": 163,
-          "pressure": 1005
-        }
-      ],
-      "header": {
-        "temperatureC": 23.43,
-        "temperatureF": 74,
-        "pressure": 1005,
-        "maxPressure": 1005,
-        "minPressure": 1000,
-        "weather": "Partial clouds",
-        "maxTemp": 23.43,
-        "minTemp": 12.7,
-        "windSpeed": "3",
-        "maxWindSpeed": 23.54,
-        "minWindSpeed": 17.48,
-        "windChill": 24,
-        "windDirection": "SouthSouthEast",
-        "tempReadingsImg": "blank.png",
-        "windReadingsImg": "blank.png",
-        "pressureReadingsImg": "blank.png"
-      },
-      "duration": null
     }
   ]
 }
