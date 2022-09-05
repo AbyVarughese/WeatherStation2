@@ -22,7 +22,10 @@ const dashboard = {
     for (let i = 0; i < stations.length; i++) {
       markers += "L.marker(["+stations[i].latitude.toString()+", "+stations[i].longitude.toString()+"]).addTo(map);\r\n";
     }
-    let mapview = ".setView(["+stations[0].latitude.toString()+", "+stations[0].longitude.toString()+"], 6.4)";
+    let mapview = null;
+    if (stations.length > 0) {
+    mapview = ".setView(["+stations[0].latitude.toString()+", "+stations[0].longitude.toString()+"], 6.4)";
+    }
     const viewData = {
       title: "Weather top Dashboard",
       stations: stations,

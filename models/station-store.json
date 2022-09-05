@@ -127,6 +127,14 @@
         "windReadingsImg": "windFalling.png",
         "pressureReadingsImg": "pressureFalling.png"
       }
+    },
+    {
+      "id": "e6d89570-2d0a-11ed-b5eb-5d4d5e914514",
+      "userid": "f975b5b0-2d09-11ed-9a1a-ffdfecffab16",
+      "title": "cork",
+      "latitude": "54.45367",
+      "longitude": "-46.42367",
+      "readings": []
     }
   ]
 }
